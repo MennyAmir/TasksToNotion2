@@ -1,15 +1,13 @@
 import { useState } from "react";
 import { Client } from "@notionhq/client";
-import dotenv from 'dotenv';
 
 import "./App.css";
 
-dotenv.config()
 
 const notion = new Client({
-  auth: process.env.VITE_NOTION_KEY ,
+  auth:  ,
 });
-const databaseId = process.env.VITE_NOTION_DATABASE_ID ;
+const databaseId = ;
 
 function App() {
   const [task, setTask] = useState("");
